@@ -40,12 +40,12 @@ const Project = () => {
 
     <div>
       <h2>Stringcode Staff</h2>
-      <table>
+      <table className='mains'>
         <tr>
             <th>Id</th>
             <th>First Name</th>
             <th>Last Name</th>
-            <th>Gender</th>
+            <th>Genders</th>
         </tr>
         {employees.map((employee, index)=>
         <tr>
