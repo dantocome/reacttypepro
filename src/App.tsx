@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/Headers/Header'
 import Project from './cordinates/Project'
 import RouterApp from './components/Router/RouterApp'
+import Routers from './Segments/Routers/Routers'
 
 
 
@@ -15,7 +16,8 @@ function App() {
     <>
       {/* <Header/> */}
       {/* <Project/> */}
-      <RouterApp/>
+      {/* <RouterApp/> */}
+      <Routers/>
       
       
       
