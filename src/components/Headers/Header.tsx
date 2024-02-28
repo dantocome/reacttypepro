@@ -38,22 +38,36 @@ function Header() {
 
 
 },
- ];
+{
+    id: 4,
+    firstName: "Emma",
+    lastName:"Ella",
+    gender: GENDER.Female,
 
+
+},
+ ];
+ 
+
+ }
 
   return (
     <div className="header">
+        <div className="mai">
+        <div className="sub">
       <h2>stringcode Limited</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br></br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
          Nam dolores, quo mollitia repellendus modi tempora!
          </p>
-         <table>
-            <tr>
+         </div>
+         <div className="table">
+         <table className="table table-striped-columns">
+            <tr className='info'>
                     <th>Id</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Gender</th>
-                    <th>Action</th>
+                    
             </tr>
             {employees.map((employee, index) =>
             <tr>
@@ -61,10 +75,13 @@ function Header() {
                 <td>{employee.firstName}</td>
                 <td>{employee.lastName}</td>
                 <td>{employee.gender}</td>
-                <td><button>Delete</button>|<button>Update</button></td>
+                
             </tr>
             )}
+            
          </table>
+         </div>
+         </div>
     </div>
   )
 }

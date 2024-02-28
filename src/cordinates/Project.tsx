@@ -38,17 +38,19 @@ const Project = () => {
 
   return (
 
-    <div>
+    <div className='content'>
+        <div className="head">
       <h2>Stringcode Staff</h2>
-      <table className='mains'>
-        <tr>
+      
+      <table className='table table-striped'>
+        <tr className='list'>
             <th>Id</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Genders</th>
         </tr>
         {employees.map((employee, index)=>
-        <tr>
+        <tr className='lis'>
             <td>{employee.id}</td>
             <td>{employee.firstName}</td>
             <td>{employee.lastName}</td>
@@ -57,7 +59,7 @@ const Project = () => {
         
         )}
       </table>
-          
+          </div>
     </div>
   
     
