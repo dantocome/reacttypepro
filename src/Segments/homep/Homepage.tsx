@@ -64,7 +64,7 @@ function Homepage() {
         
     {employees.map((employee, index)=>
        <tr>
-        <td>{employee.id}</td>,
+        <td>{employee.id}</td>
         <td>{employee.firstName}</td>
         <td>{employee.lastName}</td>
         <td>{employee.gender}</td>
