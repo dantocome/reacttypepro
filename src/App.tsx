@@ -11,6 +11,7 @@ import Students from './students/Students'
 import { GENDER } from './Segments/consts/k'
 import TestHome from './test/TestHome'
 import Counter from './Usestate/Counter'
+import EmployeeInfo from './Usestate/EmployeeInfo'
 
 
 
@@ -42,6 +43,7 @@ const handleReadmore = ()=>{
       {/* <Routers/>
       <TestHome id={1} firstName='Daniel' lastName='Egele' gender={GENDER.Male}/> */}
       <Counter/>
+      <EmployeeInfo/>
       
       
       
