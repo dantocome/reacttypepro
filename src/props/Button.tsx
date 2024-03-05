@@ -1,14 +1,18 @@
 import React from 'react'
+import "./Button.css"
 
 interface ButtonProps{
     label:string;
-    onClick?:()=>void;
+    onClick:()=>void;
     disabled?:boolean;
+    color?: "primary" | "secondary" | "readmore";
 }
-const Button = ({label, onClick, disabled=false}:ButtonProps) => {
+const Button = ({label, onClick, disabled=false, color="primary"}:ButtonProps) => {
+  const btnStyle = `button ${color} ${disabled}? "disabled": ""`
   return (
     <div>
-      <button onClick={onClick} disabled={disabled}>{label}</button>
+      <button className= {btnStyle} onClick={onClick} disabled={disabled} color={color}>{label}</button>
+      
     </div>
   )
 }

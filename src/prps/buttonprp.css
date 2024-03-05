@@ -1,0 +1,16 @@
+.buttonprp{
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    margin: 5px;
+    width: 100px;
+}
+.pricolor{
+    background-color: royalblue;
+    color: #fff;
+
+}
+.seccolor{
+    background-color: orange;
+    color: white;
+}
